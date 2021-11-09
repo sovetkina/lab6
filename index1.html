@@ -1,0 +1,24 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    <script>
+        function Vector(x,y,z){
+            this.x=prompt("Введите x");
+            this.y=prompt("Введите y");
+            this.z=prompt("Введите z");
+            this.go=function(){
+                document.write(this.x+"<br/>");
+            }
+            this.displayInfo=function(){
+                alert(Math.sqrt((this.x*this.x)+(this.y*this.y)+(this.z*this.z)));
+            }
+        }
+
+        var vec = new Vector();
+        vec.displayInfo();
+    </script>
+</body>
+</html>
